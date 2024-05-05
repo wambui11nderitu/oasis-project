@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#mealList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.meal {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.meal img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.meal h2 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.meal p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .meal {
+        padding: 15px;
+    }
+
+    .meal img {
+        margin-bottom: 15px;
+    }
+
+    .meal h2 {
+        font-size: 16px;
+    }
+
+    .meal p {
+        font-size: 12px;
+    }
+}
